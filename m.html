@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+    <style>
+        body {
+            background-color: gold;           
+        }
+
+        table, th, td{
+            border: 2px solid blue;
+        }
+
+        h1 {color: blue;}
+        p {color: rgb(18, 26, 10);}
+
+        .yang {color: darkgreen;}
+        #selamat membaca link yang aku buat {color: rgb(23, 26, 18);}
+        a[target] {
+            background-color: blueviolet;
+        }
+        .container {
+            border: 10 px solid #ffcc5c;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container>div{
+            padding: 1 px;
+            text-align: center;
+            font-size: 40px;
+            color: red
+            background-color {
+                black
+            }
+        }
+        .konten {
+            background-color: pink;
+            width: 200px;
+            height: 100px;
+        }
+        div {
+            background-color: limegreen;
+            width: 100px;
+            height: 70px;
+        }
+        h1 {
+            color: white;
+            background-color: firebrick;
+            padding-top: 10 px;
+            padding-bottom: 20 px;
+            padding-left: 25px;
+            padding-right: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="home"><button>Home</button></div>
+        <div class="search"><button>Search</button></div>
+        <div class="logout"><button>Log Out</button></div>
+    </nav>
+    <hr>
+    <h1>HALO SEMUANYA</h1>
+    <p class="yang" id="SELAMAT DATANG DISINI"><i>SELAMAT DATANG DISINI</i></p>
+    <p>Yang dimana ini merupakan situs matematika yaitu 2<sup>2</sup> kurang dari angka <sup>2</sup>log<sub>32</sub>. Sebelumnya perkenalkan nama saya Bang Syaf dan saya adalah warga negara indonesia dan tinggal diprovinsi Bengkulu.</p>
+    <p class="jADI" id="selamat membaca link yang aku buat">Jadi, selamat membaca link yang aku buat</p>
+    <hr>
+    <table>
+        <tr>
+            <th>Negara</th>
+            <th>Mata Uang</th>
+            <th>Benua</th>
+        </tr>
+        <tr>
+            <td>Indonesia</td>
+            <td>Rupiah</td>
+            <th>Asia</th>
+        </tr>
+        <tr>
+            <td>Russia</td>
+            <td>Rubel</td>
+            <td>Eropa</td>
+        </tr>
+    </table>
+    <br/>
+</body>
+<body>
+    <form action="INI ADA FORM" method="post">
+        <label for="name">Nama:</label>
+        <input id="name" type="text">
+        <br/>
+        <label for="password">Password:</label>
+        <input type="password" required>
+        <br/>
+        <input type="radio" id="Laki-laki" name="Gender" value="Laki-laki">
+        <label for="Laki-laki">Laki-laki</label>
+        <br/>
+        <input type="radio" id="Perempuan" name="Gender" value="Perempuan">
+        <label for="Perempuan">Perempuan</label>
+        <br/>
+        <label for="Age">Umur</label>
+        <input type="number" min="1" max="20">
+        <br/>
+        <textarea rows="8" cols="64">Ketik Disini</textarea>
+        <br/>
+        <button type="button">
+            OK
+        </button>
+        <button type="button" onclick="doSomething();">
+            Apply
+        </button>
+        <p>Apa Film Favoritmu</p>
+        <select>
+            <option>Transformer</option>
+            <option>Spiderman</option>
+            <option>Batman</option>
+            <option>Superman</option>
+        </select>
+        <p>Apa Makanan Favoritmu</p>
+        <select>
+            <option>Gorengan</option>
+            <option selected>Bakso</option>
+            <option>Sate</option>
+            <option>Mie</option>
+        </select>
+        <p>Minuman Favoritmu</p>
+        <select>
+            <optgroup label="Jus Buah">
+                <option>Jus Jeruk</option>
+                <option>Jus Anggur</option>
+                <option>Jus Nangka</option>
+            </optgroup>
+            <optgroup label="Minuman Haram">
+                <option>Whiskey</option>
+                <option>Topi Miring</option>
+                <option>Air Biasa</option>
+            </optgroup>
+        </select>
+    </form>
+    <fieldset>
+        <legend>Identitas Pacar</legend>
+
+        <p>
+            <label for="Nama Pacar">Nama Pacar:</label>
+            <input type="text" name="Nama Pacar">
+        <p>
+            <label for="usia">Usia:</label>
+            <input type="number" name="usia">
+        <p>
+            <label for="tanggal pacaran">Tanggal Pacaran:</label>
+            <input type="date" name="tanggal pacaran">
+            <br/>
+        <p>
+            <label for="jawaban" Pernah makan nasi?>Pernah makan nasi?</label>
+            <br/>
+            <input type="radio" id="Pernah" name="apa" value="Pernah">
+            <label for="Pernah">Pernah</label>
+            <br/>
+            <input type="radio" id="tdk Pernah" name="apa" value="Tidak Pernah">
+            <label for="tdk pernah">Tidak Pernah</label>
+    </fieldset>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.disney.com" target="_blank">Disney.com</a>
+    <a href="https://www.wikipedia.org" target="_top">wikipedia.com</a>
+</body>
+</html>
